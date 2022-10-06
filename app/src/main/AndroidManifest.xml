@@ -7,27 +7,27 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/icon_launcher"
+        android:icon="@drawable/icon_launcher_foreground"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/icon_launcher"
+        android:roundIcon="@drawable/icon_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestRina"
         tools:targetApi="31">
         <activity
-            android:name=".TipsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_tips"
-            android:parentActivityName=".ResultActivity"
-            tools:ignore="Instantiatable" />
+            android:name=".SecondActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity
             android:name=".ResultActivity"
             android:exported="true"
-            android:parentActivityName=".SecondActivity"
-            tools:ignore="Instantiatable"></activity>
+            android:parentActivityName=".SecondActivity">
+        </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name=".TipsActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".ResultActivity">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
